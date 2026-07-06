@@ -101,9 +101,11 @@ function formatAnswers(payload) {
   const labelsHaveTags = Object.keys(byNumber).length > 0;
 
   const lines = QUESTIONS.map((q, idx) => {
-    // Primary: match by Q<n> tag. Fallback: positional order (idx-th field).
-    let field = labelsHaveTags ? byNumber[q.n] : fields[idx];
-    if (field === undefined) field = fields[idx]; // secondary fallback
+    // Primary: match by Q<n> tag. If the form's labels carry Q-tags, a missing
+    // tagged field must degrade to the placeholder — never slide to a
+    // neighbouring (now shifted) field. Only when NO labels carry tags do we
+    // fall back to positional order.
+    const field = labelsHaveTags ? byNumber[q.n] : fields[idx];
 
     const raw = field ? field.value : undefined;
     let answer = normalizeValue(raw, field);

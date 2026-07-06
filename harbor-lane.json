@@ -1,0 +1,121 @@
+{
+  "client_name": "Harbor Lane Property Management",
+  "business_summary": "Harbor Lane manages 140 residential rental units for private landlords with a three-person team. Its biggest operational drag is manual intake: maintenance requests, rental applications, and monthly owner statements are re-keyed by hand across Buildium, QuickBooks, and spreadsheets. That administrative load is the main reason the team can't take on more units without hiring.",
+  "meets_guarantee": true,
+  "total_hours_saved_monthly": 36.3,
+  "total_dollar_value_monthly": 1176.4,
+  "hourly_rates_used": [
+    {
+      "role": "Owner / broker",
+      "rate": 60
+    },
+    {
+      "role": "Leasing coordinator",
+      "rate": 28
+    }
+  ],
+  "opportunities": [
+    {
+      "rank": 1,
+      "name": "Maintenance request intake & triage",
+      "current_process": "About 40 maintenance requests arrive each month by voicemail, email, and text. The coordinator listens or reads, re-types each into Buildium as a work order, and decides urgency — roughly 20 minutes per request once follow-up questions are included.",
+      "recommended_solution": "An n8n workflow captures requests from a dedicated phone line (Twilio) and the shared inbox, uses the Claude API to extract unit, issue, and urgency into a structured work order, and creates it in Buildium. The coordinator reviews a pre-filled queue and handles only flagged exceptions instead of typing every ticket.",
+      "tools": [
+        "n8n",
+        "Twilio",
+        "Claude API",
+        "Buildium"
+      ],
+      "hours_saved_monthly": 13.3,
+      "dollar_value_monthly": 372.4,
+      "complexity": "Medium",
+      "basis": "40 requests/mo x ~20 min re-keyed & triaged each = 13.3 hrs."
+    },
+    {
+      "rank": 2,
+      "name": "Monthly owner-statement assembly",
+      "current_process": "Each month the owner compiles ~25 landlord statements by pulling figures from QuickBooks and Buildium and formatting them by hand — about 15 minutes apiece.",
+      "recommended_solution": "A scheduled n8n flow pulls each owner's transactions, assembles the statement from a template, and drafts a short plain-language summary with the Claude API. The owner reviews and sends, rather than building each statement from scratch.",
+      "tools": [
+        "n8n",
+        "QuickBooks",
+        "Buildium",
+        "Claude API"
+      ],
+      "hours_saved_monthly": 5.0,
+      "dollar_value_monthly": 300.0,
+      "complexity": "High",
+      "basis": "25 statements/mo x ~12 min saved each = 5.0 hrs."
+    },
+    {
+      "rank": 3,
+      "name": "Rent reminders & late-payment follow-up",
+      "current_process": "The coordinator manually sends rent reminders to 140 tenants and chases roughly 18 late payers each month, tracking who has paid in a spreadsheet.",
+      "recommended_solution": "An n8n schedule sends templated reminders three days before rent is due and escalates a friendly follow-up to anyone unpaid by the grace date, reading payment status from Buildium so no one is chased in error.",
+      "tools": [
+        "n8n",
+        "Buildium",
+        "Gmail"
+      ],
+      "hours_saved_monthly": 9.0,
+      "dollar_value_monthly": 252.0,
+      "complexity": "Low",
+      "basis": "Reminder + late-chase workload ≈ 9.0 hrs/mo removed."
+    },
+    {
+      "rank": 4,
+      "name": "Applicant intake & screening data entry",
+      "current_process": "About 15 applications a month are entered twice — once into Buildium and again into the screening portal — at roughly 25 minutes per applicant.",
+      "recommended_solution": "An n8n workflow takes the submitted application, creates the applicant record in Buildium, and pushes the same details to the screening portal, leaving the coordinator to review results rather than key data twice.",
+      "tools": [
+        "n8n",
+        "Buildium",
+        "Google Sheets"
+      ],
+      "hours_saved_monthly": 5.0,
+      "dollar_value_monthly": 140.0,
+      "complexity": "Low",
+      "basis": "15 applications/mo x ~20 min double-entry saved = 5.0 hrs."
+    },
+    {
+      "rank": 5,
+      "name": "Move-in packet & onboarding",
+      "current_process": "For each of ~8 new tenants a month, the coordinator assembles the same move-in packet and setup tasks by hand — about 40 minutes each.",
+      "recommended_solution": "An n8n flow triggers on a signed lease, generates the personalized move-in packet, sends it for e-signature, and creates the standard onboarding tasks automatically.",
+      "tools": [
+        "n8n",
+        "DocuSign",
+        "Buildium"
+      ],
+      "hours_saved_monthly": 4.0,
+      "dollar_value_monthly": 112.0,
+      "complexity": "Low",
+      "basis": "8 onboardings/mo x ~30 min saved each = 4.0 hrs."
+    }
+  ],
+  "not_recommended": [
+    {
+      "name": "Final approval of who to rent to",
+      "reason": "Client asked (Q15) that the rent/deny decision stay a human judgment call."
+    },
+    {
+      "name": "Handling upset tenants and eviction conversations",
+      "reason": "Client asked (Q15) that sensitive tenant conversations always stay with a real person."
+    },
+    {
+      "name": "Vacancy listing syndication to the 4 listing sites",
+      "reason": "Low volume (~6 vacancies/mo) and a past Zapier attempt duplicated listings (Q14); revisit only after the core builds are proven."
+    }
+  ],
+  "roadmap": {
+    "days_1_30": "Build and prove the maintenance request intake & triage flow end to end — capturing phone, email, and text into structured Buildium work orders — and measure the real hours saved against the 13.3/month estimate.",
+    "days_31_60": "Add rent reminders & late-payment follow-up and applicant intake double-entry — both low-complexity quick wins — once the first flow is trusted.",
+    "days_61_90": "Automate monthly owner-statement assembly (the highest-effort build) and the move-in packet flow, then review measured savings and decide whether vacancy syndication is worth revisiting."
+  },
+  "recommended_first_build": {
+    "opportunity": "Maintenance request intake & triage",
+    "why": "It targets the team's single biggest time sink and carries the highest monthly value of any opportunity. At Medium complexity it's comfortably a two-week build, and proving it frees the coordinator immediately.",
+    "price": 1500,
+    "estimated_timeline": "2 weeks"
+  }
+}

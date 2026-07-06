@@ -1,0 +1,105 @@
+{
+  "eventId": "b1f0a2c4-7e3d-4a9b-9c2e-8f1a2b3c4d5e",
+  "eventType": "FORM_RESPONSE",
+  "createdAt": "2026-07-06T14:12:33.000Z",
+  "data": {
+    "responseId": "resp_9x8y7z6w5v4u3t2s1r",
+    "submissionId": "sub_9x8y7z6w5v4u3t2s1r",
+    "respondentId": "resp_abc123",
+    "formId": "wMEXaN",
+    "formName": "AI Operations Audit — Intake",
+    "createdAt": "2026-07-06T14:12:33.000Z",
+    "fields": [
+      {
+        "key": "question_1_name",
+        "label": "Q1. What is your business name, and what does it do?",
+        "type": "TEXTAREA",
+        "value": "Cedar & Vine Property Management. We manage 85 residential rental units for private landlords across one metro area, handling leasing, rent collection, maintenance coordination, and owner reporting."
+      },
+      {
+        "key": "question_2_team",
+        "label": "Q2. How many people work in the business, and what are their main roles?",
+        "type": "TEXTAREA",
+        "value": "Owner/property manager (1, that's me), leasing & tenant coordinator (1), part-time bookkeeper (1, ~15 hrs/week)."
+      },
+      {
+        "key": "question_3_rates",
+        "label": "Q3. What is the rough fully-loaded hourly cost of each role?",
+        "type": "TEXTAREA",
+        "value": "Owner ~$65/hr, leasing & tenant coordinator ~$30/hr, bookkeeper ~$35/hr."
+      },
+      {
+        "key": "question_4_timesinks",
+        "label": "Q4. Walk us through a typical week. Where does the most time get spent on work that feels repetitive, manual, or low-value?",
+        "type": "TEXTAREA",
+        "value": "Re-typing maintenance requests that come in by phone, text, and email into AppFolio; chasing tenants for late rent every month; copying new applicant details into a spreadsheet and then again into the screening portal; putting together monthly owner statements by hand."
+      },
+      {
+        "key": "question_5_repeatable",
+        "label": "Q5. What tasks get done over and over in almost exactly the same way?",
+        "type": "TEXTAREA",
+        "value": "Sending the same move-in packet and welcome email to every new tenant; posting each vacancy to the same 4 listing sites; sending the same three late-rent reminder messages on the same schedule every month."
+      },
+      {
+        "key": "question_6_doubleentry",
+        "label": "Q6. Where do you or your team copy and paste information between systems, or re-enter the same data twice?",
+        "type": "TEXTAREA",
+        "value": "Applicant info from our web application form gets keyed into AppFolio and again into the TransUnion SmartMove screening portal. Maintenance details get re-typed from voicemails/texts into AppFolio."
+      },
+      {
+        "key": "question_7_tools",
+        "label": "Q7. What software, tools, and apps do you use to run the business?",
+        "type": "TEXTAREA",
+        "value": "AppFolio, Gmail, Google Sheets, QuickBooks Online, DocuSign, a Google Voice number for tenant texts, Zillow Rental Manager, and TransUnion SmartMove for screening."
+      },
+      {
+        "key": "question_8_volume",
+        "label": "Q8. For your busiest recurring tasks, roughly how often do they happen and in what volume?",
+        "type": "TEXTAREA",
+        "value": "About 35 maintenance requests per month; roughly 12 rental applications per month; monthly rent reminders to ~85 tenants; about 6 new tenant onboardings per month; 20 owner statements assembled monthly."
+      },
+      {
+        "key": "question_9_intake",
+        "label": "Q9. How do customers, clients, or leads first reach you, and how do you respond?",
+        "type": "TEXTAREA",
+        "value": "Prospective tenants call or submit a Zillow inquiry; the coordinator usually replies within a day to schedule a showing and email an application link. Landlords come mostly by referral."
+      },
+      {
+        "key": "question_10_followups",
+        "label": "Q10. What follow-ups, reminders, or nudges does someone have to remember to send?",
+        "type": "TEXTAREA",
+        "value": "Rent reminders 3 days before it's due; following up with applicants who started but didn't finish the application; nudging our two maintenance vendors for their invoices; reminding tenants when a lease renewal is 60 days out."
+      },
+      {
+        "key": "question_11_scheduling",
+        "label": "Q11. What scheduling or coordination back-and-forth eats time?",
+        "type": "TEXTAREA",
+        "value": "Coordinating maintenance vendor visits around tenant availability usually takes 4-5 text messages per request. Scheduling showings is a few back-and-forth emails each."
+      },
+      {
+        "key": "question_12_reports",
+        "label": "Q12. What reports, summaries, or updates do you prepare regularly, and for whom?",
+        "type": "TEXTAREA",
+        "value": "Monthly owner statements pulled together from QuickBooks and AppFolio for each landlord; a weekly vacancy and delinquency summary I build in a spreadsheet for myself."
+      },
+      {
+        "key": "question_13_growth",
+        "label": "Q13. What's currently holding the business back from growing, or what would you do with the time if you got it back?",
+        "type": "TEXTAREA",
+        "value": "I can't take on more units without hiring, because admin already maxes out the three of us. I'd rather spend the time on landlord relationships and bringing on new doors."
+      },
+      {
+        "key": "question_14_pastattempts",
+        "label": "Q14. Have you tried to automate or streamline anything before? What happened?",
+        "type": "TEXTAREA",
+        "value": "Set up a Zapier zap once to post listings, but it kept duplicating them so we turned it off. AppFolio has some built-in reminders we use but they're rigid."
+      },
+      {
+        "key": "question_15_keephuman",
+        "label": "Q15. What should we NOT try to automate — the work that must stay human?",
+        "type": "TEXTAREA",
+        "value": "Handling an upset tenant or any eviction conversation always needs a real person. And the final decision on who we approve to rent to stays with me."
+      }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "client_name": "Cedarwood Clinic & Wellness Group",
+  "business_summary": "Cedarwood is a multi-location wellness group with a lean back-office team. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. The single biggest operational drag is that nearly every administrative task still passes through a human keyboard at least twice.",
+  "meets_guarantee": true,
+  "total_hours_saved_monthly": 73.2,
+  "total_dollar_value_monthly": 2871.0,
+  "hourly_rates_used": [
+    {
+      "role": "Front-desk staff",
+      "rate": 30
+    },
+    {
+      "role": "Bookkeeper",
+      "rate": 30
+    },
+    {
+      "role": "Operations manager",
+      "rate": 50
+    },
+    {
+      "role": "Owner",
+      "rate": 60
+    }
+  ],
+  "opportunities": [
+    {
+      "rank": 1,
+      "name": "Multi-channel customer inquiry intake and routing",
+      "current_process": "Today, front-desk staff handle this entirely by hand. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. The work currently flows through Twilio with no automation, and every exception is chased individually over email and phone, which is exactly where the hours quietly disappear each month.",
+      "recommended_solution": "Build an n8n workflow that captures the trigger event, uses the Claude API to structure the incoming data, and writes the result back to the systems of record with a human review step for flagged exceptions only. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. ",
+      "tools": [
+        "n8n",
+        "Twilio",
+        "Claude API",
+        "Gmail",
+        "HubSpot"
+      ],
+      "hours_saved_monthly": 18.5,
+      "dollar_value_monthly": 555.0,
+      "complexity": "Medium",
+      "basis": "Estimated at roughly 18.5 hours per month based on the stated volume multiplied by the conservative per-item minutes saved, then rounded down to stay honest about realized savings. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across mul"
+    },
+    {
+      "rank": 2,
+      "name": "Invoice reconciliation across accounting and bank feeds",
+      "current_process": "Today, bookkeeper handle this entirely by hand. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. The work currently flows through QuickBooks with no automation, and every exception is chased individually over email and phone, which is exactly where the hours quietly disappear each month.",
+      "recommended_solution": "Build an n8n workflow that captures the trigger event, uses the Claude API to structure the incoming data, and writes the result back to the systems of record with a human review step for flagged exceptions only. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. ",
+      "tools": [
+        "n8n",
+        "QuickBooks",
+        "Plaid",
+        "Google Sheets"
+      ],
+      "hours_saved_monthly": 14.0,
+      "dollar_value_monthly": 420.0,
+      "complexity": "High",
+      "basis": "Estimated at roughly 14.0 hours per month based on the stated volume multiplied by the conservative per-item minutes saved, then rounded down to stay honest about realized savings. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across mul"
+    },
+    {
+      "rank": 3,
+      "name": "Recurring appointment scheduling and reminder cascade",
+      "current_process": "Today, front-desk staff handle this entirely by hand. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. The work currently flows through Calendly with no automation, and every exception is chased individually over email and phone, which is exactly where the hours quietly disappear each month.",
+      "recommended_solution": "Build an n8n workflow that captures the trigger event, uses the Claude API to structure the incoming data, and writes the result back to the systems of record with a human review step for flagged exceptions only. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. ",
+      "tools": [
+        "n8n",
+        "Calendly",
+        "Twilio",
+        "Gmail"
+      ],
+      "hours_saved_monthly": 12.3,
+      "dollar_value_monthly": 369.0,
+      "complexity": "Low",
+      "basis": "Estimated at roughly 12.3 hours per month based on the stated volume multiplied by the conservative per-item minutes saved, then rounded down to stay honest about realized savings. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across mul"
+    },
+    {
+      "rank": 4,
+      "name": "Weekly management KPI report assembly and narrative",
+      "current_process": "Today, operations manager handle this entirely by hand. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. The work currently flows through Sheets with no automation, and every exception is chased individually over email and phone, which is exactly where the hours quietly disappear each month.",
+      "recommended_solution": "Build an n8n workflow that captures the trigger event, uses the Claude API to structure the incoming data, and writes the result back to the systems of record with a human review step for flagged exceptions only. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. ",
+      "tools": [
+        "n8n",
+        "Google Sheets",
+        "Claude API",
+        "Slack"
+      ],
+      "hours_saved_monthly": 9.7,
+      "dollar_value_monthly": 485.0,
+      "complexity": "Medium",
+      "basis": "Estimated at roughly 9.7 hours per month based on the stated volume multiplied by the conservative per-item minutes saved, then rounded down to stay honest about realized savings. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across mul"
+    },
+    {
+      "rank": 5,
+      "name": "Vendor purchase-order creation and approval routing",
+      "current_process": "Today, operations manager handle this entirely by hand. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. The work currently flows through Airtable with no automation, and every exception is chased individually over email and phone, which is exactly where the hours quietly disappear each month.",
+      "recommended_solution": "Build an n8n workflow that captures the trigger event, uses the Claude API to structure the incoming data, and writes the result back to the systems of record with a human review step for flagged exceptions only. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. ",
+      "tools": [
+        "n8n",
+        "Airtable",
+        "DocuSign",
+        "Gmail"
+      ],
+      "hours_saved_monthly": 8.0,
+      "dollar_value_monthly": 400.0,
+      "complexity": "Medium",
+      "basis": "Estimated at roughly 8.0 hours per month based on the stated volume multiplied by the conservative per-item minutes saved, then rounded down to stay honest about realized savings. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across mul"
+    },
+    {
+      "rank": 6,
+      "name": "Support ticket triage, tagging, and first-draft replies",
+      "current_process": "Today, owner handle this entirely by hand. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. The work currently flows through Zendesk with no automation, and every exception is chased individually over email and phone, which is exactly where the hours quietly disappear each month.",
+      "recommended_solution": "Build an n8n workflow that captures the trigger event, uses the Claude API to structure the incoming data, and writes the result back to the systems of record with a human review step for flagged exceptions only. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. ",
+      "tools": [
+        "n8n",
+        "Zendesk",
+        "Claude API"
+      ],
+      "hours_saved_monthly": 6.5,
+      "dollar_value_monthly": 390.0,
+      "complexity": "High",
+      "basis": "Estimated at roughly 6.5 hours per month based on the stated volume multiplied by the conservative per-item minutes saved, then rounded down to stay honest about realized savings. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across mul"
+    },
+    {
+      "rank": 7,
+      "name": "Onboarding document collection and checklist tracking",
+      "current_process": "Today, owner handle this entirely by hand. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. The work currently flows through Dropbox with no automation, and every exception is chased individually over email and phone, which is exactly where the hours quietly disappear each month.",
+      "recommended_solution": "Build an n8n workflow that captures the trigger event, uses the Claude API to structure the incoming data, and writes the result back to the systems of record with a human review step for flagged exceptions only. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. ",
+      "tools": [
+        "n8n",
+        "Dropbox Sign",
+        "Airtable",
+        "Gmail"
+      ],
+      "hours_saved_monthly": 4.2,
+      "dollar_value_monthly": 252.0,
+      "complexity": "Low",
+      "basis": "Estimated at roughly 4.2 hours per month based on the stated volume multiplied by the conservative per-item minutes saved, then rounded down to stay honest about realized savings. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across mul"
+    }
+  ],
+  "not_recommended": [
+    {
+      "name": "Clinical judgment on treatment plans",
+      "reason": "Client asked (Q15) that all clinical decisions remain fully human."
+    },
+    {
+      "name": "Handling billing disputes and refunds",
+      "reason": "Judgment-heavy and low-volume; the risk of an automated error outweighs the modest time saved."
+    }
+  ],
+  "roadmap": {
+    "days_1_30": "Build and prove the multi-channel customer inquiry intake and routing flow first. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. ",
+    "days_31_60": "Add the recurring appointment scheduling cascade and the support ticket triage build. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. ",
+    "days_61_90": "Tackle the higher-effort invoice reconciliation and KPI report builds, then measure realized savings. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is clipped, truncated, or forced to overlap adjacent flowables when the source data contains verbose, run-on descriptions of the kind a thorough consultant might realistically produce for a complex operation with many moving parts. "
+  },
+  "recommended_first_build": {
+    "opportunity": "Multi-channel customer inquiry intake and routing",
+    "why": "It removes the largest single block of recurring hours and proves the review-only workflow pattern that every later build reuses. This is a deliberately long paragraph written to stress-test the text wrapping behaviour of the layout engine across multiple lines, ensuring that no content is",
+    "price": 1500,
+    "estimated_timeline": "2 weeks"
+  }
+}
